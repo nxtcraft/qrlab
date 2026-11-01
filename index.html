@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="manifest" href="/qrcraft/manifest.json">
+<meta name="theme-color" content="#6366f1">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QRLab – Free QR Code Generator | URL, WiFi, vCard, Text</title>
 <meta name="description" content="Free QR code generator online. Create QR codes for URLs, WiFi, contact cards, text, email, phone and SMS. Download as PNG. No signup, no watermark, no limit.">
@@ -273,5 +276,6 @@
 <!-- QRCode.js CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="js/app.js"></script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("/qrcraft/sw.js");</script>
 </body>
 </html>
